@@ -1,0 +1,12 @@
+socksio
+faiss-cpu
+tf-keras
+sentence-transformers
+pypdf 
+langchain
+langchain_community
+gradio
+langchain_ollama
+langchain_chroma
+"unstructured[local-inference]"
+ollama
