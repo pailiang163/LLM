@@ -13,13 +13,13 @@ LOAD_PATH = "./"
 def load_documents(source_dir: str):
     """
     加载指定目录下的所有文档
-    支持格式：.txt, .pdf, .docx, .md , .xlsx , .xls
+    支持格式：.txt, .pdf, .docx, .md , .xlsx , .xls, .py
     """
 
-    # 分别加载不同格式，txt，md 格式
+    # 分别加载不同格式，txt，md ,.py格式
     text_loader = DirectoryLoader(
         path=source_dir,  # 指定读取文件的父目录
-        glob=["**/*.txt", "**/*.md"],  # 指定读取文件的格式
+        glob=["​**​/*.txt", "​**​/*.md", "​**​/*.py"],  # 指定读取文件的格式
         show_progress=True,  # 显示加载进度
         use_multithreading=True,  # 使用多线程
         silent_errors=True,  # 错误时不抛出异常，直接忽略该文件
